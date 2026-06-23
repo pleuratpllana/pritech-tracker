@@ -141,14 +141,16 @@ https://jsonplaceholder.typicode.com/todos?_limit=6
 
 ## Live Preview
 
-The easiest way to test the app:
+This project can be tested instantly using Expo Go:
 
-1. Open this link:
+1. Open the project link:
    https://expo.dev/accounts/pleuratpllana/projects/pritech-tasks
 
-2. Scan the QR code using the **Expo Go** app (iOS / Android)
+2. Click **Preview** to generate the QR code
 
-3. The app will launch instantly on your device
+3. Scan the QR code using the **Expo Go** app (iOS / Android)
+
+4. The application will open immediately on your device
 
 ---
 
