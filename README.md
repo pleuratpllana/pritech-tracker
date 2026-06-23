@@ -1,4 +1,4 @@
-# PRITECH Tasks
+# PriTech Tracker
 
 A polished Expo + React Native task manager built for the PRITECH React Native technical assessment.  
 The project demonstrates clean architecture, reusable components, local persistence, and a modern dark UI using TypeScript.
