@@ -5,23 +5,32 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
-
     "splash": {
       "backgroundColor": "#0A0A0A",
       "resizeMode": "contain"
     },
-
-    "assetBundlePatterns": ["**/*"],
-
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
-
     "android": {},
-
     "web": {
       "bundler": "metro",
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "48d2737e-670e-438e-9bf6-11bccbcddda9"
+      }
+    },
+    "owner": "pleuratpllana",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/48d2737e-670e-438e-9bf6-11bccbcddda9"
     }
   }
 }
