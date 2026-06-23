@@ -1,6 +1,6 @@
 # PriTech Tracker
 
-A polished Expo + React Native task manager built for the PRITECH React Native technical assessment.  
+A polished Expo + React Native task manager built for the PRITECH React Native technical assessment.
 The project demonstrates clean architecture, reusable components, local persistence, and a modern dark UI using TypeScript.
 
 ---
@@ -70,14 +70,14 @@ After starting the project:
 ## Architecture
 
 src/
-  components/   Reusable UI components
-  constants/    Design system values
-  navigation/   Navigation setup
-  screens/      App screens
-  services/     API calls
-  storage/      AsyncStorage logic
-  types/        TypeScript types
-  utils/        Helper functions
+components/   Reusable UI components
+constants/    Design system values
+navigation/   Navigation setup
+screens/      App screens
+services/     API calls
+storage/      AsyncStorage logic
+types/        TypeScript types
+utils/        Helper functions
 
 State is managed in App.tsx and passed down through props for simplicity and readability.
 
@@ -136,6 +136,18 @@ https://jsonplaceholder.typicode.com/todos?_limit=6
 
 ### Task List
 ![Task List](assets/screenshots/04_List.jpg)
+
+---
+
+## Live Preview
+
+This project is published using Expo EAS Update.
+
+Open latest version:
+https://expo.dev/accounts/pleuratpllana/projects/pritech-tasks
+
+Or view update history:
+https://expo.dev/accounts/pleuratpllana/projects/pritech-tasks/updates
 
 ---
 
