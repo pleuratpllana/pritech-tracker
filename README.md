@@ -141,7 +141,7 @@ https://jsonplaceholder.typicode.com/todos?_limit=6
 
 ## Live Preview
 
-This project can be tested instantly using Expo Go:
+This project can be tested instantly using Expo Go.
 
 1. Open the project link:
    https://expo.dev/accounts/pleuratpllana/projects/pritech-tasks
