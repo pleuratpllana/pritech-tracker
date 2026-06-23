@@ -1,101 +1,106 @@
 # PRITECH Tasks
 
-A polished Expo + React Native task manager built for the PRITECH React Native technical task. The app focuses on clean fundamentals, practical TypeScript, local persistence, and a premium dark UI without unnecessary state-management complexity.
+A polished Expo + React Native task manager built for the PRITECH React Native technical assessment.  
+The project demonstrates clean architecture, reusable components, local persistence, and a modern dark UI using TypeScript.
 
 ## Features
 
-- Create personal tasks with inline title validation
-- View tasks with title, description preview, status, and created date
+- Create personal tasks with inline validation
+- View task list with title, description preview, status, and creation date
 - Toggle tasks between pending and completed
 - Delete tasks with immediate local persistence
 - Search tasks by title
-- Filter tasks by all, completed, or pending
+- Filter tasks (All / Completed / Pending)
 - Dedicated task details screen
-- Required empty states for no tasks, no search results, no completed tasks, and no pending tasks
-- Suggested Tasks section powered by JSONPlaceholder
-- Custom animated toast feedback for create, update, and delete actions
+- Empty states for all key scenarios
+- Suggested tasks fetched from JSONPlaceholder API
+- Custom animated toast notifications
 
 ## Tech Stack
 
 - Expo
 - React Native
 - TypeScript
-- React Navigation native stack
+- React Navigation (Native Stack)
 - AsyncStorage
-- Functional components and React Hooks
+- React Hooks
+
+## Prerequisites
+
+- Node.js (LTS recommended)
+- Expo Go app (Android or iOS)
+- OR Android Studio / Xcode for emulator
 
 ## Setup
 
-```bash
 npm install
-```
 
-## Running
+npx expo start
 
-```bash
-npm start
-```
+## Running the App
 
-Then open the app in Expo Go, an Android emulator, an iOS simulator, or the web preview from the Expo developer tools.
+After starting the project:
 
-Useful commands:
+- Scan QR code with Expo Go
+- Press `a` for Android emulator
+- Press `i` for iOS simulator
+- Press `w` for web
 
-```bash
-npm run android
-npm run ios
-npm run web
-npm run typecheck
-```
+## First Run
+
+- App starts with empty task list
+- Suggested tasks are fetched from API
+- Users can immediately create and manage tasks
+- Data is stored locally using AsyncStorage
 
 ## Architecture
 
-The source is organized in a simple, assessment-friendly structure:
-
-```text
 src/
-  components/   Reusable UI pieces such as TaskCard, SearchBar, FilterTabs, EmptyState, PrimaryButton, and Toast
-  constants/    Shared colors, spacing, and typography tokens
-  navigation/   Stack navigator setup
-  screens/      Task List, Add Task, and Task Details screens
-  services/     Public API integration for suggested tasks
-  storage/      AsyncStorage task loading and saving
-  types/        Task and navigation TypeScript types
-  utils/        Date formatting and centralized toast helper
-```
+  components/   Reusable UI components
+  constants/    Design system values
+  navigation/   Navigation setup
+  screens/      App screens
+  services/     API calls
+  storage/      AsyncStorage logic
+  types/        TypeScript types
+  utils/        Helper functions
 
-State is intentionally kept local in `App.tsx` and passed into the stack screens. This keeps the data flow readable while avoiding Redux, Zustand, React Query, or other libraries outside the brief.
+State is managed in App.tsx and passed down through props.
 
 ## Design System
 
-The app uses a dark premium visual system inspired by focused productivity tools:
+Background: #0A0A0A  
+Card: #141414  
+Surface: #1C1C1C  
+Border: #262626  
+Primary Text: #FAFAFA  
+Secondary Text: #A3A3A3  
+Muted Text: #737373  
+Primary Accent: #3B82F6  
+Success: #22C55E  
+Danger: #EF4444  
 
-- Background: `#0A0A0A`
-- Cards: `#141414`
-- Surface: `#1C1C1C`
-- Borders: `#262626`
-- Primary text: `#FAFAFA`
-- Secondary text: `#A3A3A3`
-- Muted text: `#737373`
-- Primary accent: `#3B82F6`
-- Success: `#22C55E`
-- Danger: `#EF4444`
+## API
 
-Spacing and typography live in reusable constants so screens and components stay visually consistent.
-
-## API Integration
-
-Suggested tasks are fetched from:
-
-```text
 https://jsonplaceholder.typicode.com/todos?_limit=6
-```
 
-The app displays a maximum of six suggested tasks, shows a loading indicator while fetching, and displays a quiet error message if the request fails. Suggested tasks are visually secondary and are kept separate from user-created tasks.
+- Max 6 suggested tasks
+- Loading state included
+- Error fallback handled
+- Separate from user tasks
 
 ## AsyncStorage
 
-User tasks are loaded once on app start from AsyncStorage and saved after every create, update, or delete action. Invalid or missing stored data safely falls back to an empty task list.
+- Loads tasks on app start
+- Saves automatically on create, update, delete
+- Falls back to empty state if corrupted or missing
 
 ## Screenshots
 
-Add screenshots here after running the app locally:
+
+## Notes
+
+- Built with Expo Managed Workflow
+- No backend required
+- Fully offline-capable after initial fetch
+- Focused on simplicity and clean structure
