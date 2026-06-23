@@ -1,0 +1,5 @@
+node_modules/
+.expo/
+.npm-cache/
+dist/
+web-build/
