@@ -3,6 +3,8 @@
 A polished Expo + React Native task manager built for the PRITECH React Native technical assessment.  
 The project demonstrates clean architecture, reusable components, local persistence, and a modern dark UI using TypeScript.
 
+---
+
 ## Features
 
 - Create personal tasks with inline validation
@@ -16,6 +18,8 @@ The project demonstrates clean architecture, reusable components, local persiste
 - Suggested tasks fetched from JSONPlaceholder API
 - Custom animated toast notifications
 
+---
+
 ## Tech Stack
 
 - Expo
@@ -25,17 +29,23 @@ The project demonstrates clean architecture, reusable components, local persiste
 - AsyncStorage
 - React Hooks
 
+---
+
 ## Prerequisites
 
 - Node.js (LTS recommended)
 - Expo Go app (Android or iOS)
 - OR Android Studio / Xcode for emulator
 
+---
+
 ## Setup
 
 npm install
 
 npx expo start
+
+---
 
 ## Running the App
 
@@ -46,12 +56,16 @@ After starting the project:
 - Press `i` for iOS simulator
 - Press `w` for web
 
+---
+
 ## First Run
 
 - App starts with empty task list
 - Suggested tasks are fetched from API
 - Users can immediately create and manage tasks
 - Data is stored locally using AsyncStorage
+
+---
 
 ## Architecture
 
@@ -65,54 +79,69 @@ src/
   types/        TypeScript types
   utils/        Helper functions
 
-State is managed in App.tsx and passed down through props.
+State is managed in App.tsx and passed down through props for simplicity and readability.
+
+---
 
 ## Design System
 
-Background: #0A0A0A  
-Card: #141414  
-Surface: #1C1C1C  
-Border: #262626  
-Primary Text: #FAFAFA  
-Secondary Text: #A3A3A3  
-Muted Text: #737373  
-Primary Accent: #3B82F6  
-Success: #22C55E  
-Danger: #EF4444  
+- Background: #0A0A0A
+- Card: #141414
+- Surface: #1C1C1C
+- Border: #262626
+- Primary Text: #FAFAFA
+- Secondary Text: #A3A3A3
+- Muted Text: #737373
+- Primary Accent: #3B82F6
+- Success: #22C55E
+- Danger: #EF4444
+
+---
 
 ## API
 
 https://jsonplaceholder.typicode.com/todos?_limit=6
 
-- Max 6 suggested tasks
+- Maximum of 6 suggested tasks
 - Loading state included
 - Error fallback handled
-- Separate from user tasks
+- Suggested tasks are separate from user tasks
+
+---
 
 ## AsyncStorage
 
 - Loads tasks on app start
 - Saves automatically on create, update, delete
-- Falls back to empty state if corrupted or missing
+- Falls back to empty state if storage is missing or corrupted
+
+---
 
 ## Screenshots
 
 ### Welcome
 ![Welcome](assets/screenshots/01_Welcome.jpg)
 
+---
+
 ### Task
 ![Task](assets/screenshots/02_Task.jpg)
 
+---
+
 ### Add Task
-![Add](assets/screenshots/03_Add.jpg)
+![Add Task](assets/screenshots/03_Add.jpg)
+
+---
 
 ### Task List
-![List](assets/screenshots/04_List.jpg)
+![Task List](assets/screenshots/04_List.jpg)
 
+---
 
 ## Notes
 
 - Built with Expo Managed Workflow
 - No backend required
-- Fully offline-capable after initial fetch
-- Focused on simplicity and clean structure
+- Fully offline-capable after initial API fetch
+- Focused on simplicity, readability, and maintainability
