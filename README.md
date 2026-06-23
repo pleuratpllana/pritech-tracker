@@ -141,13 +141,14 @@ https://jsonplaceholder.typicode.com/todos?_limit=6
 
 ## Live Preview
 
-This project is published using Expo EAS Update.
+The easiest way to test the app:
 
-Open latest version:
-https://expo.dev/accounts/pleuratpllana/projects/pritech-tasks
+1. Open this link:
+   https://expo.dev/accounts/pleuratpllana/projects/pritech-tasks
 
-Or view update history:
-https://expo.dev/accounts/pleuratpllana/projects/pritech-tasks/updates
+2. Scan the QR code using the **Expo Go** app (iOS / Android)
+
+3. The app will launch instantly on your device
 
 ---
 
