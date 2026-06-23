@@ -97,6 +97,18 @@ https://jsonplaceholder.typicode.com/todos?_limit=6
 
 ## Screenshots
 
+### Welcome
+![Welcome](assets/screenshots/01_Welcome.jpg)
+
+### Task
+![Task](assets/screenshots/02_Task.jpg)
+
+### Add Task
+![Add](assets/screenshots/03_Add.jpg)
+
+### Task List
+![List](assets/screenshots/04_List.jpg)
+
 
 ## Notes
 
